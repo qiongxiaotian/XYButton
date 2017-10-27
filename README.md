@@ -1,4 +1,4 @@
 # XYButton
 
- ![image]( https://github.com/qiongxiaotian/XYButton/1234.png)
+ ![image](https://github.com/qiongxiaotian/XYButton/blob/master/1234.png)
  
