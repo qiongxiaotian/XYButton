@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--viewcontriller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="viewcontriller" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTA-GN-gLK" customClass="XYButton">
+                                <rect key="frame" x="30" y="40" width="100" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="Nhy-P8-Vci"/>
+                                    <constraint firstAttribute="width" constant="100" id="Shy-Qo-mfn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="文下图上" image="123">
+                                    <color key="titleColor" red="1" green="0.46023195709999998" blue="0.221011181" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="xibBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2I6-J2-49c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zC9-dn-bQa" customClass="XYButton">
+                                <rect key="frame" x="245" y="40" width="100" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="ZMT-L9-W4e"/>
+                                    <constraint firstAttribute="height" constant="120" id="gfo-c2-A9I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="文字在图片内" image="1234">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zC9-dn-bQa" secondAttribute="trailing" constant="30" id="CVl-kX-z1M"/>
+                            <constraint firstItem="mTA-GN-gLK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="asa-iW-93U"/>
+                            <constraint firstItem="mTA-GN-gLK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="eT8-8v-b9E"/>
+                            <constraint firstItem="zC9-dn-bQa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="oFa-3R-tFe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="继承" id="8lw-Xe-xWl"/>
+                    <connections>
+                        <outlet property="titleInsideImage" destination="zC9-dn-bQa" id="I66-Aa-bIQ"/>
+                        <outlet property="xibBtn" destination="mTA-GN-gLK" id="Mza-fp-vTg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-562.39999999999998" y="-103.89805097451276"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="123" width="314" height="376"/>
+        <image name="1234" width="398" height="284"/>
+    </resources>
+</document>
